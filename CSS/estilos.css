@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ @font-face {
+        font-family: Peace_Sans_Webfont;
+        src: local(Peace_Sans_Webfont), url(../font/Peace_Sans_Webfont.ttf);
+    }
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: local(GlacialIndifference-Regular), url(../font/GlacialIndifference-Regular.otf);
+}
+
+body {
+    background-image: url(../IMG/fundo-azul-invert.jpg);
+    font-family: GlacialIndifference-Regular;
+    color: black;
+}
+
+::selection {
+    color: white;
+    background-color: #7D3B69;
+}
+
+header {
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.virgula-menu {
+    height: 50px;
+}
+
+.menu figure {
+    display: grid;
+    grid-template-columns:70px 200px;
+    align-items: center;
+    color: #7D3B69;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    font-family: GlacialIndifference-Regular;
+    width: 100vw;
+    background-color: rgb(140, 170, 168);
+    position: fixed;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: text-shadow 0.4s;
+}
+
+.menu a:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.site-title {
+    display: grid;
+    grid-template-columns: 640px 360px;
+}
+
+.logo-header {
+    display: flex;
+    height: 400px;
+}
+
+.major-logo {
+    margin-top: 50px;
+    margin-left:0;
+    justify-content: center;
+}
+
+.site-title {
+    margin-top: 37px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: right;
+}
+
+.icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.icons a {
+    color: #7D3B69;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.icons a:hover {
+    color: #683157;
+}
+
+.quem-somos,
+.portfolio,
+.servicos,
+.agencia {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.quem-somos h1,
+.portfolio h1,
+.servicos h1 {
+    font-family: Peace_Sans_Webfont;
+    font-size: 2.8em;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.foot {
+    margin-top: 1px;
+    display: inline-block;
+    background-color:#7D3B69;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.virgula-end {
+    height: 150px;
+}
+
+.ufpe {
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.fale a {
+    font-size: 115px;
+    color: #88A09E;
+    transition: 0.4s;
+}
+
+.fale a:hover {
+    color:#88a09ebb;
+}
+
+.fale-conosco figcaption {
+    color: white;
+}
+
+.fejepe {
+    height: 30px;
+}
+
+.apoio {
+    margin: 20px;
+}
+
+.end-page,
+.fale,
+.apoio,
+.junte {
+    display: inline-block;
+    width: 23%;
+    padding-top: 50px;
+    vertical-align: middle;
+}
+
+.junte {
+    text-align: start;
+    background-color: #7D3B69;
+    color: white;
+}
+
+.junte a {
+    color: white;
+}
+
+.junte a:hover {
+    background-color: #FFD80C;
+    color: black;
+    text-decoration: none;
+}
+
+.credits {
+    font-size: 0.8em;
+    background-color: #7D3B69;
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.credits a {
+    color: white;
+}
+
+.credits a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #FFD80C;
+   
+}
+
+@media (max-width: 820px) {
+    .site-title {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 550px;  
+    }
+    .major-logo {
+        margin: 0;
+        justify-self: center;
+    }
+    .logo-header {
+        height: 340px;
+    }
+    .description {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .menu figure {
+        justify-content: center;
+        margin-top: 0;
+        font-size: 1em;
+    }
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .menu ul {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .menu a {
+        font-size: 18px;
+        color: white; 
+        padding:5px;
+    }
+    .menu li {
+        margin: 3px;
+    }
+    .quem-somos h1,
+    .portfolio h1,
+    .servicos h1 {
+        font-size: 2em;
+        margin-left: 40px;
+        padding-top: 30px;
+    }
+    .foot .address {
+        color:white;
+    }
+    .virgula-end {
+        height: 70px;
+    }
+    .fale-conosco figcaption {
+        color: white;
+    }
+    .fale a {
+        font-size: 50px;
+    }
+    .apoio {
+        background-color: #7D3B69;
+    }
+    .ufpe {
+        height: 70px;
+    }
+    .fejepe {
+        height: 20px;
+    }
+    .end-page,
+    .fale,
+    .apoio,
+    .junte {
+        width: 40%;
+        vertical-align: middle;
+    }
+    .apoio {
+        padding-top: 30px;
+    }
+    .credits {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:550px) {
+    .site-title {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 414px;  
+    }
+    .major-logo {
+        margin: 0;
+        justify-self: center;
+    }
+    .logo-header {
+        height: 260px;
+    }
+    .description {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .menu figure {
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .menu ul {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .menu a {
+        font-size: 16px;
+        color: white; 
+        padding:5px;
+    }
+    .menu li {
+        margin: 3px;
+    }
+    .quem-somos h1,
+    .portfolio h1,
+    .servicos h1 {
+        font-size: 2em;
+        margin-left: 40px;
+        padding-top: 30px;
+    }
+    .foot .address {
+        color:white;
+    }
+    .virgula-end {
+        height: 70px;
+    }
+    .fale-conosco figcaption {
+        color: white;
+    }
+    .fale a {
+        font-size: 50px;
+    }
+    .apoio {
+        background-color: #7D3B69;
+    }
+    .ufpe {
+        height: 70px;
+    }
+    .fejepe {
+        height: 20px;
+    }
+    .end-page,
+    .fale,
+    .apoio,
+    .junte {
+        width: 40%;
+        vertical-align: middle;
+    }
+    .apoio {
+        padding-top: 30px;
+    }
+    .credits {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 414.99999px) {
+    header {
+        min-height: 100vh;
+    }
+    .site-title {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 320px;  
+    }
+    .logo-header {
+        height: 200px;
+        margin: 0px 0px 0px 0px;
+    }
+    .major-logo {
+        justify-self: center;
+    }
+    .description {
+        padding: 20px;
+        padding-top: 0;
+        font-size: 14px;
+    }
+    .menu figure {
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .menu ul {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .menu a {
+        font-size: 13px;
+        color: white; 
+        padding:5px;
+    }
+    .menu li {
+        margin: 3px;
+    }
+    .quem-somos h1,
+    .portfolio h1,
+    .servicos h1 {
+        font-size: 2em;
+        margin-left: 0;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .foot .address {
+        color:white;
+    }
+    .virgula-end {
+        height: 70px;
+    }
+    .fale-conosco figcaption {
+        color: white;
+    }
+    .fale a {
+        font-size: 50px;
+    }
+    .apoio {
+        background-color: #7D3B69;
+    }
+    .ufpe {
+        height: 70px;
+    }
+    .fejepe {
+        height: 20px;
+    }
+    .end-page,
+    .fale,
+    .apoio,
+    .junte {
+        width: 80%;
+        vertical-align: middle;
+    }
+    .apoio {
+        padding-top: 30px;
+    }
+    .credits {
+        padding-top: 50px;
+    }
+}
+
+

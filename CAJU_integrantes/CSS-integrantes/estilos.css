@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Peace_Sans_Webfont;
+        src: local(Peace_Sans_Webfont), url(../font/Peace_Sans_Webfont.ttf);
+    }
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: local(GlacialIndifference-Regular), url(../font/GlacialIndifference-Regular.otf);
+}
+
+body {
+    font-family: GlacialIndifference-Regular;
+    background-image: url(../IMG/fundo-azul-invert.jpg);
+}
+
+::selection {
+    background-color: #7D3B69;
+    color: white;
+}
+
+.virgula-menu {
+    height: 50px;
+}
+
+.menu figure {
+    display: grid;
+    grid-template-columns:70px 200px;
+    align-items: center;
+    color: #7D3B69;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    font-family: GlacialIndifference-Regular;
+    width: 100vw;
+    background-color: rgb(140, 170, 168);
+    position: fixed;
+}
+
+.menu ul {
+    display: grid;
+    width: 100vw;
+    justify-content: flex-end;
+    grid-template-columns: 150px 50px 50px 50px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.home a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.home a:hover {
+    text-shadow: white 0px 0px 10px;
+}
+
+.icons a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8em;
+    color: #7D3B69;
+}
+
+.icons a:hover {
+    color: #683157;
+}
+
+.menu li {
+    list-style: none;
+    margin: 2px;
+}
+
+h1 {
+    font-family: Peace_Sans_Webfont;
+    font-size: 2.8em;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.list {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+.list ul {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.list a {
+    color: black;
+}
+
+.list a:hover {
+    color: white;
+    background-color:#7D3B69;
+    text-decoration: none;
+}
+
+.list li {
+    margin: 4px;
+}
+
+.foot {
+    margin-top: 1px;
+    display: inline-block;
+    background-color:#7D3B69;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.virgula-end {
+    height: 150px;
+}
+
+.ufpe {
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.fale a {
+    font-size: 115px;
+    color: #88A09E;
+    transition: 0.4s;
+}
+
+.fale a:hover {
+    color:#88a09ebb;
+}
+
+.fale-conosco figcaption {
+    color: white;
+}
+
+.fejepe {
+    height: 30px;
+}
+
+.apoio {
+    margin: 20px;
+}
+
+.end-page,
+.fale,
+.apoio,
+.junte {
+    display: inline-block;
+    width: 23%;
+    padding-top: 50px;
+    vertical-align: middle;
+}
+
+.junte {
+    text-align: start;
+    background-color: #7D3B69;
+    color: white;
+}
+
+.junte a {
+    color: white;
+}
+
+.junte a:hover {
+    background-color: #FFD80C;
+    color: black;
+    text-decoration: none;
+}
+
+.credits {
+    font-size: 0.8em;
+    background-color: #7D3B69;
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.credits a {
+    color: white;
+}
+
+.credits a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #FFD80C;
+   
+}
